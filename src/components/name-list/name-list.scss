@@ -1,0 +1,15 @@
+.name-list {
+  ul li p:hover {
+    cursor: pointer;
+    .badge {
+      opacity: 1;
+    }
+  }
+  ul li .badge {
+    opacity: 0;
+    transition: 0.2s;
+    border-radius: 50%;
+    vertical-align: super;
+    font-size: 50%;
+  }
+}

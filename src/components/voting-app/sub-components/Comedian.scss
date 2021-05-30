@@ -1,0 +1,19 @@
+.comedian {
+  // width: 10rem;
+  transition: 0.2s;
+
+  @media screen and (max-width: 576px) {
+    font-size: 0.75rem;
+    width: 45%;
+    height: 0%;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  img {
+    height: 85%;
+  }
+}

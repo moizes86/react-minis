@@ -1,0 +1,13 @@
+.my-link {
+  transition: 0.2s;
+}
+
+.my-link:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.link-box {
+  border: 1px solid black;
+  height: 50px;
+}

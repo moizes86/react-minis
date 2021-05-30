@@ -1,0 +1,15 @@
+.notes-container{
+  clear: both;
+}
+.note {
+  background-image: url("../assets/note.png");
+  background-size: cover;
+  padding-top: 20px;
+  word-wrap: break-word;
+  height: 100%;
+}
+
+.note-board-background-img {
+  background-image: url("../assets/background.jpg");
+  // background-size: cover;
+}
