@@ -6,7 +6,7 @@ const NameListUl = ({ names, removeName }) => {
       <ul className="">
         {names.map((name, i) => (
           <li key={i}>
-            <p className="d-inline-block pr-4">
+            <p className="d-inline-block ml-n3 pr-4">
               {name}{" "}
               <span className="badge badge-danger" id={name} onClick={removeName}>
                 X

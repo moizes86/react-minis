@@ -30,8 +30,8 @@ const NameListForm = ({ addName }) => {
         </div>
 
         {/*  */}
-        <div className="d-flex justify-content-center">
-          <button type="submit" className="btn btn-primary btn-submit" disabled={!nameInput}>
+        <div className="d-flex">
+          <button type="submit" className="btn btn-primary btn-submit my-3" disabled={!nameInput}>
             Submit
           </button>
         </div>

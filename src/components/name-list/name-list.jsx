@@ -3,9 +3,9 @@ import NameListForm from "./sub-components/name-list-form";
 import NameListUl from "./sub-components/name-list-ul";
 import "./name-list.scss";
 
-const NameList = ({ initialNames }) => {
+const NameList = () => {
   const [enteredLast, setEnteredLast] = useState("Enter Name And See What Happens");
-  const [names, setNames] = useState(initialNames);
+  const [names, setNames] = useState(['Moshe', 'Dor', 'Yakov']);
 
   function removeName(e) {
     const name = e.target.id;
@@ -21,7 +21,7 @@ const NameList = ({ initialNames }) => {
 
   return (
     <div className="name-list">
-      <h5>{enteredLast}</h5>
+      <h5 className="ml-3">{enteredLast}</h5>
       <NameListForm addName={addName} setEnteredLast={setEnteredLast} />
       <NameListUl names={names} removeName={removeName} />
     </div>

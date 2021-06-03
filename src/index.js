@@ -1,51 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import "./index.scss";
 import App from "./App";
-import NoteBoard from "./components/notes-board/notes-board.component";
-import reportWebVitals from "./reportWebVitals";
-import NameList from "./components/name-list/name-list";
-import ChooseANumber from "./components/choose-a-number/choose-a-number";
-import LoginPage from "./components/login-page/login-page";
-import Carousel from './components/carousel/Carousel';
-import DiceGame from "./components/dice-game/DiceGame";
-import RandomQuoteGenerator from "./components/random-quate-generator/RandomQuateGenerator";
-import VotingApp from "./components/voting-app/VotingApp";
+import MyNavbar from "./components/my-navbar/my-navbar";
+import Container from "react-bootstrap/esm/Container";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <div className="container">
-      <App />
-        <Switch>
-          <Route exact path="/note-board">
-            <NoteBoard />
-          </Route>
-          <Route exact path="/name-list">
-            <NameList initialNames={['Moshe', 'Dor', 'Ron', 'Liad']} />
-            <NameList initialNames={[]} />
-          </Route>
-          <Route exact path="/choose-a-number">
-            <ChooseANumber />
-          </Route>
-          <Route exact path="/login-page">
-            <LoginPage />
-          </Route>
-          <Route exact path="/carousel">
-            <Carousel />
-          </Route>
-          <Route exact path="/dice-game">
-            <DiceGame />
-          </Route>
-          <Route exact path="/random-quote-generator">
-            <RandomQuoteGenerator />
-          </Route>
-          <Route exact path="/voting-app">
-            <VotingApp />
-          </Route>
-        </Switch>
-      </div>
+      <MyNavbar />
+        <App />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")

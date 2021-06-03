@@ -4,7 +4,7 @@ import InputEmail from "./input-email";
 import InputPassword from "./input-password";
 
 const LoginForm = () => {
-  const [email, setEmail] = useState({ input: "", valid:false });
+  const [email, setEmail] = useState({ input: "", valid: false });
   const [password, setPassword] = useState({ input: "", valid: false });
   const [message, setMessage] = useState("");
 
@@ -21,14 +21,16 @@ const LoginForm = () => {
   return (
     <div className="login">
       <div className="details">
-        <ul>
+        <p>
           Valid users:
-          <li>moshe@gmail.com, 123456</li>
-          <li>s@s.s, 123123</li>
-        </ul>
+          <br />
+          moshe@gmail.com, 123456
+          <br />
+          s@s.s, 123123
+        </p>
       </div>
       <h3>{message ? message : null}</h3>
-      <form className="col-sm-10 col-xs-12 col-md-3 needs-validation" onSubmit={handleSubmit}>
+      <form className="ml-n3 col-sm-10 col-xs-12 col-md-3 needs-validation" onSubmit={handleSubmit}>
         <InputEmail setEmail={setEmail} email={email} />
         <InputPassword setPassword={setPassword} password={password} />
         <button
